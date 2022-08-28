@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+        <div id="header">
+            <h1>Tip Calculator </h1>
+           
+        </div>
+      <section>
+        <div class="wrapper">
+          <label for="bill" class="lbl"> Bill </label>
+          <div class="input-box">
+            <span>$</span>
+            <input type="number" value="0.00" id="bill" class="val" />
+          </div>
+        </div>
+        <div class="wrapper">
+          <span class="lbl">Tip</span>
+          <span id="tip-amount" class="val"> $0 </span>
+        </div>
+        <hr />
+        <div class="wrapper">
+          <span class="lbl">Total Amount</span>
+          <span id="total-amount" class="val"> $0 </span>
+        </div>
+      </section>
+      <section>
+        <div class="wrapper">
+          <label for="tip" class="lbl"> Tip % </label>
+          <span id="tip-percent" class="val"> 0 </span>
+        </div>
+        <input type="range" min="0" id="tip" value="0" />
+        <div class="wrapper">
+          <label for="no-of-people" class="lbl"> No. of People </label>
+          <span id="split-num" class="val"> 0 </span>
+        </div>
+        <input type="range" min="1" max="15" id="no-of-people" value="1" />
+      </section>
+      <section>
+        <div class="wrapper" id="last-child">
+          <span class="lbl"> Tip Per Person </span>
+          <span id="tip-per-person" class="val"> $0 </span>
+        </div>
+
+        <div class="wrapper" id="last-child">
+          <span class="lbl"> Total Per Person </span>
+          <span id="total-per-person" class="val"> $0 </span>
+        </div>
+      </section>
+    </div>
+
+    <div class="footer">
+      <p>
+        Created by
+        <a href="#" target="_blank">Prashant Kale</a>
+      </p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

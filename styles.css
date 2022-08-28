@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.4px;
+}
+body {
+  background-color: #f3f3f3;
+  height: 100%;
+  background: linear-gradient(#e66465, #9198e5) fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#header h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8rem;
+    background: transparent;
+    color: #004d4d;
+    text-align: center;
+    border: solid 2px #fff;
+    border-radius: 10px;
+    padding: 3px;
+    box-shadow: 0 0 10px black;
+    transition: 0.5s;
+}
+
+
+.container {
+  background-color: #e6ffff;
+  width: 450px;
+  padding: 50px 40px;
+  margin: 5px 5px;
+  border: solid 2px black;
+  border-radius: 10px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+.lbl {
+  font-size: 16px;
+  color: #44475b;
+  font-weight: 400;
+}
+.val {
+  color: #44475b;
+  font-weight: 500;
+  font-size: 18px;
+}
+.input-box {
+  background-color: #660022;
+  color: whitesmoke;
+  padding: 5px;
+}
+#bill {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100px;
+  text-align: right;
+  color: #f44a4a;
+}
+hr {
+  border: none;
+  border-bottom: 2px solid #1c1616;
+}
+input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+}
+
+input[type="range"]:not(:last-child) {
+  margin-bottom: 5px;
+}
+section:not(:last-child) {
+  margin-bottom: 40px;
+}
+section:not(:first-child) {
+  margin-top: 40px;
+}
+section:last-child {
+  background-color: #33ccff;
+  padding: 5px;
+  border-radius: 5px;
+}
+section:last-child .val,
+section:last-child .lbl {
+  color: #333;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #660000;
+  text-align: center;
+}
+.footer p {
+  text-decoration: none;
+  color: #fff;
+}
+.footer a {
+  text-decoration: none;
+  color: #00b8e6;
+}
+.footer a:hover {
+  text-decoration: underline;
+  color: #ff6666;
+}
+
+@media (min-width: 640px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
